@@ -1,0 +1,50 @@
+<html>
+<body>
+<div>
+    <a href="/">MAIN PAGE</a>
+</div>
+
+<div>Tasklists:</div>
+
+<div>
+    <form action="addTaskList" method="post">
+        <input type= "number" name= "user_id" placeholder= "user_id:" />
+        <input type= "text" name= "name" placeholder= "name:" />
+        <input type= "text" name= "description" placeholder= "description:" />
+        <button type= "submit">add</button>
+    </form>
+</div>
+
+<table border="1" cellspacing="0">
+    <tr align="center">
+        <td>tasklist_id</td>
+        <td>user_id</td>
+        <td>name</td>
+        <td>description</td>
+        <td>created</td>
+    </tr>
+
+    {{#tasklists}}
+    <tr align="center">
+        <td>{{tasklist_id}}</td>
+        <td>{{user_id}}</td>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+        <td>{{created}}</td>
+    </tr>
+    {{/tasklists}}
+
+</table>
+
+<div><br /></div>
+
+<div>
+    <form action= "removeTaskList" method="post">
+        <input type= "number" name= "id" placeholder= "id" />
+        <button type= "submit">remove</button>
+    </form>
+</div>
+
+
+</body>
+</html>

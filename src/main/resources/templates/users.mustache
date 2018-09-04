@@ -1,0 +1,52 @@
+<html>
+<body>
+<div>
+    <a href="/">MAIN PAGE</a>
+</div>
+<div>Users:</div>
+
+<div>
+    <form action= "addUser" method="post">
+        <input type= "text" name= "username" placeholder= "username" />
+        <input type= "text" name= "email" placeholder= "email" />
+        <input type= "text" name= "password" placeholder= "password" />
+        <button type= "submit">add</button>
+    </form>
+</div>
+
+<div>
+    <table border="1" cellspacing="0">
+        <tr align="center">
+            <td>user_id</td>
+            <td>username</td>
+            <td>email</td>
+            <td>isActivated</td>
+            <td>created</td>
+            <td>md5_password_hash</td>
+        </tr>
+        {{#users}}
+        <tr align="center">
+            <td>{{user_id}}</td>
+            <td>{{username}}</td>
+            <td>{{email}}</td>
+            <td>{{isActivated}}</td>
+            <td>{{created}}</td>
+            <td>{{md5_password_hash}}</td>
+        </tr>
+        {{/users}}
+    </table>
+</div>
+
+<div>
+    <br />
+</div>
+
+<div>
+    <form action= "removeUser" method="post">
+        <input type= "number" name= "id" placeholder= "id" />
+        <button type= "submit">remove</button>
+    </form>
+</div>
+
+</body>
+</html>
