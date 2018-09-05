@@ -1,11 +1,12 @@
-package geek.project.tasks;
+package com.geekujava.todolist.controler;
 
-import geek.project.tasks.domain.Task;
-import geek.project.tasks.domain.TaskList;
-import geek.project.tasks.domain.BaseUser;
-import geek.project.tasks.repository.TaskListRepository;
-import geek.project.tasks.repository.TaskRepository;
-import geek.project.tasks.repository.BaseUserRepository;
+import com.geekujava.todolist.controler.domain.BaseUser;
+import com.geekujava.todolist.controler.domain.Task;
+import com.geekujava.todolist.controler.domain.TaskList;
+import com.geekujava.todolist.controler.repository.BaseUserRepository;
+import com.geekujava.todolist.controler.repository.TaskListRepository;
+import com.geekujava.todolist.controler.repository.TaskRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

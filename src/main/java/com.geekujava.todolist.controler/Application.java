@@ -1,4 +1,4 @@
-package geek.project.tasks;
+package com.geekujava.todolist.controler;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
