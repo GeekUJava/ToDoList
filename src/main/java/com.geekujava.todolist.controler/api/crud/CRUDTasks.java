@@ -1,8 +1,8 @@
-package geek.project.tasks.api.crud;
+package com.geekujava.todolist.controler.api.crud;
 
-import geek.project.tasks.repository.BaseUserRepository;
-import geek.project.tasks.repository.TaskListRepository;
-import geek.project.tasks.repository.TaskRepository;
+import com.geekujava.todolist.controler.repository.BaseUserRepository;
+import com.geekujava.todolist.controler.repository.TaskListRepository;
+import com.geekujava.todolist.controler.repository.TaskRepository;
 
 public class CRUDTasks {
     private TaskListRepository taskLists;
